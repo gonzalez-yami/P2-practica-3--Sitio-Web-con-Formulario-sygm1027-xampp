@@ -1,0 +1,13 @@
+/* Agregar al final de estilos.css (o dejar como archivo aparte) */
+.btn-cerrar-sidebar {
+    background-color: #ef4444;
+    margin-top: 12px;
+}
+.btn-cerrar-sidebar:hover { background-color: #dc2626; }
+
+@media (max-width: 800px) {
+    header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+    nav ul { flex-wrap: wrap; justify-content: center; }
+    .contenedor-principal { flex-direction: column; }
+    .grid-categorias-inicio, .productos-grid { grid-template-columns: 1fr; }
+}

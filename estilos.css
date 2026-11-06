@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f6efff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado Principal */
+header {
+    background-color: #a855f7;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.activo {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.btn-cerrar-header {
+    background-color: #ef4444;
+}
+
+.btn-cerrar-header:hover {
+    background-color: #dc2626;
+}
+
+/* Encabezado de Sección */
+.encabezado-seccion {
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.encabezado-seccion h1 {
+    color: #8b5cf6;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.encabezado-seccion p {
+    color: #8b5cf6;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Layout Principal con Sidebar Lateral */
+.contenedor-principal {
+    max-width: 1250px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    width: 100%;
+}
+
+/* Contenedor del Catálogo y Contenido de Inicio */
+.catalogo-container {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.08);
+}
+
+.titulo-inicio, .subtitulo-catalogo {
+    color: #7c3aed;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion-inicio {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Grid de Tarjetas de Categorías en Inicio */
+.grid-categorias-inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-categoria-inicio {
+    border: 1px solid #e9d5ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #faf5ff;
+}
+
+.img-categoria-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.img-categoria-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Grilla Original de Productos (Intacta) */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-producto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.08);
+    text-align: center;
+    border: 1px solid #f3e8ff;
+}
+
+.img-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.tarjeta-producto h3 {
+    font-size: 15px;
+    color: #1f2937;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.tarjeta-producto .descripcion {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 8px;
+    min-height: 32px;
+}
+
+.tarjeta-producto .precio {
+    font-weight: bold;
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* Botones Principales */
+.btn-comprar {
+    background-color: #c084fc;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #a855f7;
+}
+
+/* Sidebar Lateral */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-login {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.08);
+    border: 1px solid #e9d5ff;
+}
+
+.caja-login h3 {
+    color: #6b21a8;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.caja-bienvenida {
+    background-color: #f3e8ff;
+    border: 1px solid #c084fc;
+}
+
+.caja-bienvenida h3 {
+    color: #6b21a8;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.caja-bienvenida p {
+    font-size: 13px;
+    color: #4c1d95;
+}
+
+.btn-login {
+    background-color: #c084fc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #a855f7;
+}
+
+/* Footer con datos del alumno */
+footer {
+    background-color: #a855f7;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+}
